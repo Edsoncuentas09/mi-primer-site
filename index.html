@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <title> HTML</title>
+    <style>
+        table ,th ,td {
+            border: 1px solid black;
+        }
+    </style>   
+</head>
+<body>
+    <h1>TAGS E SUAS PROPIEDADES  </h1>
+    <br>
+    <h3>O elemento TITLE ?</h3>
+    <p>o elemento <b>title</b> e o que aparece como o nome da nossa pagina web o site <br>
+    ele sempre esta dentro do elemento <span style="color:blue">head</span> que seria o <br>
+    cabeçalho do nosso site.   </p>
+    <br>
+    <h3>Os elementos H1 e P ?</h3>
+    <p>o elemneto <b>h1</b> e utilizado para colocar titulos ,e ele tem 6 tamanhos diferentes <br>
+    enquanto o elemento <b>p</b> se utiliza para parrafos .</p>
+    <br>
+    <h3>Os elementos HR e BR ?</h3>
+    <p>o elemento <b>hr</b> e utilizado para colocar linhas de separaçao ,e o elemento <b>br</b><br>
+    e utilizado para pulos ou quebras de linhas de texto</p>
+    <br>
+    <h3>O elemento !----?</h3>
+    <p>o elememto<b>!---- </b>e utilizado para comentoarios no codigo do programador ,ele seria oculto do<br>
+    usuario que utiliza a pagina principal </i----></p>
+    <!--isso daqui e um exemplo de um comentario oculto-->
+    <br>
+    <h3>O elemnto A ?</h3>
+    <p>o elemnto <b>A</b> ou tambem chamado como <b>hipervinculo</b> e utilizado para a utilizaçao de links com a propiedade <span style="color:red">href="https://"</span><br> 
+        tem duas formas de utilizar ex:<br>
+          #1:ela abri a guia no mesmo site <br>
+        <a href="https://www.google.com.br">ir a google</a><br>
+
+          #2:ela abri uma nova guia sem a execuçao do seu site <br>
+        <a href="https://www.chrome.com.br"> ir a chrome</a>
+    </p>
+    <br>
+    <h3>o elemento IMG? </h3>
+    <p>o elemento <b>img</b> e utilizado para agregar imagens no seu site com a sua propiedade <span style="color:red">src:""</span><br>
+    tambem tendo duas formas de utilizaçao na hora de utilizar a sua propidade ,por ex :<br>
+          #1:para archivos que esta na mesma pasta do seu index.html:<br>
+          <b style="color:gold">SRC="FUTEBOL.jpg"</b><br>
+
+          #2:para archivos de imagens que tenham uma nova pasta dentro da pasta do index.html:<br>
+          <b style="color:gold">SRC="img/FUTEBOL.jpg"</b>
+          <br>
+          <img src="html.jpeg"/> </p>
+    <br>
+    <h3>Elemento de lista nao ordenada(ul) e ordenada (ol)? </h3>
+    <p> o elemento de de lista nao ordenada <b>ul</b> temcomo subelemento <b>li</b>, ex:
+         <ul>
+            <li>elemento 1</li>
+            <li>elemento 2</li> 
+            <li>elemento 3</li>
+         </ul>
+    <br>
+    o elemento de lista ordenada <b>ol</b> temcomo subelemnto <b>li</b> ,ex:
+    <!--podemos agregar o atriuto "value" para indicar o valor dele -->
+
+         <ol>
+             <li value="100"> elemento 1</li>
+             <li > elemento 2</li>
+             <li> elemento 3</li>
+         </ol>
+    representaçao em letras do alfabeto:
+    <!--podemos mudar o estilo de nosos elementos com numeros romanos ,alfabeto etc...-->
+         <ol>
+            <li STYLE="list-style-type: lower-alpha;"> elemento 1</li>
+            <li STYLE="list-style-type: lower-alpha;"> elemento 2</li>
+            <li STYLE="list-style-type: lower-alpha;"> elemento 3</li>
+        </ol>
+    representaçao de uma lista em numeros romanos :
+        <ol>
+            <li style="list-style-type: lower-roman;"> elemento 1</li>
+            <li style="list-style-type: lower-roman;"> elemento 2</li>
+            <li style="list-style-type: lower-roman;"> elemento 3</li>
+        </ol>
+    </p>
+    <br>
+    
+       <table width="300px">
+        <tr>
+            <th>Grupo</th>
+            <th>idade</th>
+        </tr>
+        <tr>
+            <td> Edson</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <td> Gabriel</td>
+            <td> 19</td>
+        </tr>
+        <tr>
+            <td> Victor</td>
+            <td> 45</td>
+        </tr>
+        <tr>
+            <td> Hilda</td>
+            <td> 48</td>
+        </tr>
+        <tfoot>
+            <td>total</td>
+            <td> 138 </td>
+        </tfoot>
+       </table>
+     
+<form action="/formulario" method="GET">
+    <!--o elemento form e utilizado pra criar formularios ou pedir informaçoes dos usuarios -->
+    <label for="nome">Nome</label>
+    <input id="nome" name="nome" placeholder="ex:Gabriel"/>
+    <br>
+    <label for="sobrenome">sobrenome</label>
+    <input id="sobrenome" name="sobrenome" placeholder="ex:zidane"/>
+    <br>
+    <label for="email">Email</label>
+    <input id="email" name="email" placeholder="ex:edson@gmail.com.br"/>
+    <br>
+    <label for="password">contrasenha</label>
+    <input type="password" id="password" name="password"/>
+    <br>
+    <label for="comentario">Comentario</label>
+    <textarea rows="20" cols="60" id="comentario" name="comentario" placeholder="adicione um comentario aqui"></textarea>
+    <br>
+    <button type="button"><img src="html.jpeg"/></button>
+    <button type="reset">enviar</button>
+    <button type="submit">enviar</button>
+</form>     
+  
+
+    
+</body>
+</html>
